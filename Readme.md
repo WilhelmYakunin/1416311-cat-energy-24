@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Виталий Якунин](https://up.htmlacademy.ru/adaptive/24/user/1416311).
-* Наставник: `Неизвестно`.
+- Студент: [Виталий Якунин](https://up.htmlacademy.ru/adaptive/24/user/1416311).
+- Наставник: [Захар Овчаров](https://htmlacademy.ru/profile/id906939).
 
 ---
 
