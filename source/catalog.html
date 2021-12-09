@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="catalog-page-header">
+    <header class="catalog-page-header page-header">
         <a href="./index.html" class="catalog-page-header__logo">
-          <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="200" height="60">
+          <img src="./img/header-logo.svg" alt="изображение логотипа-кота">
         </a>
         <div class="catalog-page-header__logo-text">
           <img src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи">
@@ -15,28 +16,28 @@
         <nav class="catalog-page-header__site-navigation">
           <button class="catalog-page-header__site-navigation-button"></button>
           <ul class="catalog-page-header__site-navigation-list">
-            <li class="catalog-page-header__site-navigation-item">
+            <li class="catalog-page-header__site-navigation-item site-navigation">
               <a href="./index.html" class="catalog-page-header__link">Главная</a>
             </li>
-            <li class="catalog-page-header__site-navigation-item">
+            <li class="catalog-page-header__site-navigation-item site-navigation">
               <a href="./catalog.html" class="catalog-page-header__link
               catalog-page-header__link--active">Каталог продукции</a>
             </li>
-            <li class="catalog-page-header__site-navigation-item">
-              <a href="./programmForm.html" class="catalog-page-header__link">Подобор программы</a>
+            <li class="catalog-page-header__site-navigation-item site-navigation">
+              <a href="./form.html" class="catalog-page-header__link">Подобор программы</a>
             </li>
           </ul>
         </nav>
     </header>
-    <main class="catalog-page-main">
-      <h1 class="catalog-header">Каталог продукции</h1>
+    <main class="catalog-page-main page-main">
+      <h1 class="catalog-page-main__header">Каталог продукции</h1>
       <section class="products">
-        <h2 class="products-header products-header--visually-hiden">
+        <h2 class="products__header products__header--visually-hiden">
           Каталог продукции сайта Кэт энерджи
         </h2>
         <ul class="products__list">
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -47,23 +48,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">500 г</th>
+                  <th>Масса</th>
+                  <th>500 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Курица</th>
+                  <th>Вкус</th>
+                  <th>Курица</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">700 Р.</th>
+                  <th>Цена</th>
+                  <th>700 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="chicken-500" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -74,23 +75,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">1000 г</th>
+                  <th>Масса</th>
+                  <th>1000 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Курица</th>
+                  <th>Вкус</th>
+                  <th>Курица</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">1000 Р.</th>
+                  <th>Цена</th>
+                  <th>1000 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="chicken-1000" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -101,23 +102,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">500 г</th>
+                  <th>Масса</th>
+                  <th>500 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Рыба</th>
+                  <th>Вкус</th>
+                  <th>Рыба</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">700 Р.</th>
+                  <th>Цена</th>
+                  <th>700 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="fish-500" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -128,23 +129,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">1000 г</th>
+                  <th>Масса</th>
+                  <th>1000 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Рыба</th>
+                  <th>Вкус</th>
+                  <th>Рыба</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">1000 Р.</th>
+                  <th>Цена</th>
+                  <th>1000 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="fish-1000" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -155,23 +156,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">500 г</th>
+                  <th>Масса</th>
+                  <th>500 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Гречка</th>
+                  <th>Вкус</th>
+                  <th>Гречка</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">400 Р.</th>
+                  <th>Цена</th>
+                  <th>400 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="buckwheat-500" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -182,23 +183,23 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">1000 г</th>
+                  <th>Масса</th>
+                  <th>1000 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Гречка</th>
+                  <th>Вкус</th>
+                  <th>Гречка</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">700 Р.</th>
+                  <th>Цена</th>
+                  <th>700 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="buckwheat-1000" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item">
+          <li class="products__item product-item">
             <img src="#" alt="изображение продукта" class="products__image">
             <div class="products__desc">
               <div class="products__name">
@@ -209,27 +210,27 @@
               </div>
               <table class="products__features">
                 <tr class="products__features-mass">
-                  <th class="products__features-mass-text">Масса</th>
-                  <th class="products__features-mass-value">500 г</th>
+                  <th>Масса</th>
+                  <th>500 г</th>
                 </tr>
                 <tr class="products__features-taste">
-                  <th class="products__features-taste-text">Вкус</th>
-                  <th class="products__features-taste-value">Рис</th>
+                  <th>Вкус</th>
+                  <th>Рис</th>
                 </tr>
                 <tr class="products__features-price">
-                  <th class="products__features-price-text">Цена</th>
-                  <th class="products__features-price-value">500 Р.</th>
+                  <th>Цена</th>
+                  <th>500 Р.</th>
                 </tr>
               </table>
             </div>
             <input id="rice-500" class="products__button products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="products__item products__item--show-all">
+          <li class="products__item products__item--show-all product-item">
             <img src="#" alt="изображение показать больше" class="products__item-show-pic">
             <div class="products__desc">
-              <p>Показать еще 100500 товаров</p>
-              <p>На самом деле вкусов гораздо больше!</p>
+              <p lass="products__desc--additional">Показать еще 100500 товаров</p>
+              <p class="products__desc--additional-info">На самом деле вкусов гораздо больше!</p>
             </div>
             <input id="show-more" class="products__button products__button--show-all" type="button" value="Показать все">
           </li>
@@ -237,13 +238,12 @@
         </ul>
       </section>
       <section class="additional-products">
-        <h2 class="additional-products-header
-        additional-products-header--visually-hiden">
-          Каталог дполнительных продуктов сайта Кэт энерджи
+        <h2 class="additional-products__header">
+          Дополнительные товары
         </h2>
-        <ul class="addtional-products__list">
+        <ul class="additional-products__list">
 
-          <li class="additional-products__item">
+          <li class="additional-products__item additional-product-item">
             <div class="additional-products__name">
               Сахарозаменитель
             </div>
@@ -257,7 +257,7 @@
             additional-products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="additional-products__item">
+          <li class="additional-products__item additional-product-item">
             <div class="additional-products__name">
               Питьевая вода
             </div>
@@ -271,7 +271,7 @@
             additional-products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="additional-products__item">
+          <li class="additional-products__item additional-product-item">
             <div class="additional-products__name">
               Молоко
             </div>
@@ -285,7 +285,7 @@
             additional-products__button--order" type="button" value="Заказать">
           </li>
 
-          <li class="additional-products__item">
+          <li class="additional-products__item additional-product-item">
             <div class="additional-products__name">
               Витамины
             </div>
@@ -311,43 +311,47 @@
           </p>
         </div>
       </section>
-      <section class="catalog-page-invetation-partners">
-        <h2 class="catalog-page-invetation-partners__header catalog-page-invetation-partners__header--visually-hidden">
+      <section class="invetation-partners-catalog-page invetation-partners">
+        <h2 class="invetation-partners__header invetation-partners__header--visually-hidden">
           Приглашение к сотрудничеству
         </h2>
-        <div class="catalog-page-invetation-partners__wrapper">
-          <p class="catalog-page-invetation-partners__desc">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="catalog-page-invetation-partners__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-          <iframe class="catalog-page-invetation-partners__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853351422233!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638092780524!5m2!1sru!2sru"
+        <div class="invetation-partners__wrapper">
+          <p class="invetation-partners__desc">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="invetation-partners__address">
+            <span class="invetation-partners__address--lowercase">ул.</span> Большая Конюшенная,
+            <span class="invetation-partners__address--lowercase">д.</span> 19/8
+            <span>Санкт-Петербург</span></address>
+          <iframe class="invetation-partners__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853351422233!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638092780524!5m2!1sru!2sru"
           width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
-    <footer class="catalog-page-footer">
+    <footer class="catalog-page-footer page-footer">
       <div class="catalog-page-footer__text-logo">
         <img src="./img/footer-text-logo.svg" alt="текст лого">
       </div>
       <div class="catalog-page-footer__socials">
         <ul class="social">
-          <li class="social__item social__item--vk">
+          <li class="social-item social__vk">
             <a href="#" aria-label="Вконтакте">
               <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
             </a>
           </li>
-          <li class="social__item social__item--insta">
+          <li class="social-item social__insta">
             <a href="#" aria-label="Инстаграм">
               <img src="./img/intagramm-icon.svg" alt="Инстаграм лого">
             </a>
           </li>
-          <li class="social__item social__item--fb">
+          <li class="social-item social__fb">
             <a href="#" aria-label="Фэйсбук">
               <img src="./img/facebook-icon.svg" alt="лого Фэйсбук">
             </a>
           </li>
         </ul>
       </div>
-      <div class="catalog-page-footer__academy-conntet">
-        <span class="catalog-page-footer__academy-desc">HTML Academy</span>
+      <div class="land-page-footer__academy-contet">
+        HTML
+        <span class="land-page-footer__academy-contet--lowercase">Academy</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
           <img src="./img/htmlacademy.svg" alt="лого акадэми">
         </a>

@@ -1,0 +1,16 @@
+.example__title {
+  text-transform: lowercase;
+  background: rgba(242, 242, 242);
+}
+
+.example__title::first-letter {
+  text-transform: capitalize;
+}
+
+.example__desc {
+  text-transform: lowercase;
+}
+
+.example__desc::first-letter {
+  text-transform: capitalize;
+}

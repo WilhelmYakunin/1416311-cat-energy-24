@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="land-page-header">
+    <header class="land-page-header page-header">
         <a href="./index.html" class="land-page-header__logo">
           <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="200" height="60">
         </a>
@@ -15,33 +16,34 @@
         <nav class="land-page-header__site-navigation">
           <button class="land-page-header__site-navigation-button"></button>
           <ul class="land-page-header__site-navigation-list">
-            <li class="land-page-header__site-navigation-item">
+            <li class="land-page-header__site-navigation-item site-navigation">
               <a href="./index.html" class="land-page-header__link
               land-page-header__link--active">Главная</a>
             </li>
-            <li class="land-page-header__site-navigation-item">
+            <li class="land-page-header__site-navigation-item site-navigation">
               <a href="./catalog.html" class="land-page-header__link">Каталог продукции</a>
             </li>
-            <li class="land-page-header__site-navigation-item">
-              <a href="./programmForm.html" class="land-page-header__link">Подобор программы</a>
+            <li class="land-page-header__site-navigation-item site-navigation">
+              <a href="./form.html" class="land-page-header__link">Подобор программы</a>
             </li>
           </ul>
         </nav>
     </header>
-    <main class="land-page-main">
+    <main class="land-page-main page-main">
       <div class="site-lead">
+        <div class="site-lead__backgroung-cat">
         <div class="site-lead__text">
           <h1 class="site-lead__header">Функционалное питание для котов</h1>
           <p class="site-lead__slogan">Занялся собой? Займись котом!</p>
         </div>
-        <div class="site-lead__backgroung-cat"></div>
         <img src="./img/lead-image.svg" alt="Кэт энерджи продукт банка с вкусняшкой" class="site-lead__main-image">
-        <a href="./programmForm.html" class="site-lead__programm-button">Подобрать программу</a>
+        <a href="./form.html" class="site-lead__programm-button">Подобрать программу</a>
+      </div>
       </div>
       <section class="programms-desc">
         <h2 class="programms-desc__header programms-desc__header--visually-hidden">Описание программ</h2>
           <ul class="programms-desc__list">
-            <li class="programms-desc__item">
+            <li class="programms-desc__item programms-desc-item">
               <div class="programms-desc__header">
                 <div class="programms-desc__img">
                   <img src="./img/gracefull-cat.svg" alt="Изображение стройной кошки">
@@ -59,7 +61,7 @@
                 <a href="#" class="programms-desc__footer-content">Каталог slim</a>
               </div>
             </li>
-            <li class="programms-desc__item">
+            <li class="programms-desc__item programms-desc-item">
               <div class="programms-desc__header">
                 <div class="programms-desc__img">
                   <img src="./img/muscles-cat.svg" alt="Изображение массивной кошки">
@@ -79,10 +81,10 @@
           </ul>
       </section>
       <section class="features">
-        <h2 class="features__header features__header--visually-hidden">Как это работает</h2>
+        <h2 class="features__header">Как это работает</h2>
         <div class="features__wrapper">
         <ul class="features__list">
-          <li class="features__item">
+          <li class="features__item features-item">
             <div class="features__img">
               <img src="./img/health-nutrition.svg" alt="изображение только полезные вещества" class="features__pic">
             </div>
@@ -90,7 +92,7 @@
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
-          <li class="features__item">
+          <li class="features__item features-item">
             <div class="features__img">
               <img src="./img/easy-cooking.svg" alt="изображение легко готовить" class="features__pic">
             </div>
@@ -98,14 +100,14 @@
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="features__item">
+          <li class="features__item features-item">
             <div class="features__img">
               <img src="./img/fork-and-knife.svg" alt="изображение замените два приема пищи" class="features__pic">
             </div>
             <p class="features__desc">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
-            <li class="features__item">
+            <li class="features__item features-item">
               <div class="features__img">
                 <img src="./img/oclock.svg" alt="изображение часы" class="features__pic">
               </div>
@@ -117,9 +119,8 @@
       </div>
       </section>
       <section class="example">
-        <h2 class="example__header-desc example__header-desc--visually-hiden">Пример</h2>
+        <h2 class="example__title">Живой пример</h2>
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
           <p class="example__desc">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
@@ -142,35 +143,38 @@
           </div>
         </div>
       </section>
-      <section class="land-page-invetation-partners">
-        <h2 class="land-page-invetation-partners__header land-page-invetation-partners__header--visually-hidden">
+      <section class="invetation-partners-land-page invetation-partners">
+        <h2 class="invetation-partners__header invetation-partners__header--visually-hidden">
           Приглашение к сотрудничеству
         </h2>
-        <div class="land-page-invetation-partners__wrapper">
-          <p class="land-page-invetation-partners__desc">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="land-page-invetation-partners__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-          <iframe class="land-page-invetation-partners__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853351422233!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638092780524!5m2!1sru!2sru"
+        <div class="invetation-partners__wrapper">
+          <p class="invetation-partners__desc">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="invetation-partners__address">
+            <span class="invetation-partners__address--lowercase">ул.</span> Большая Конюшенная,
+            <span class="invetation-partners__address--lowercase">д.</span> 19/8
+            <span>Санкт-Петербург</span></address>
+          <iframe class="invetation-partners__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853351422233!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638092780524!5m2!1sru!2sru"
           width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
-    <footer class="land-page-footer">
+    <footer class="land-page-footer page-footer">
       <div class="land-page-footer__text-logo">
         <img src="./img/footer-text-logo.svg" alt="текст лого">
       </div>
       <div class="land-page-footer__socials">
         <ul class="social">
-          <li class="social__item social__item--vk">
+          <li class="social-item social__vk">
             <a href="#" aria-label="Вконтакте">
               <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
             </a>
           </li>
-          <li class="social__item social__item--insta">
+          <li class="social-item social__insta">
             <a href="#" aria-label="Инстаграм">
               <img src="./img/intagramm-icon.svg" alt="Инстаграм лого">
             </a>
           </li>
-          <li class="social__item social__item--fb">
+          <li class="social-item social__fb">
             <a href="#" aria-label="Фэйсбук">
               <img src="./img/facebook-icon.svg" alt="лого Фэйсбук">
             </a>
@@ -178,7 +182,8 @@
         </ul>
       </div>
       <div class="land-page-footer__academy-contet">
-        <span class="land-page-footer__academy-desc">HTML Academy</span>
+        HTML
+        <span class="land-page-footer__academy-contet--lowercase">Academy</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
           <img src="./img/htmlacademy.svg" alt="лого акадэми">
         </a>

@@ -1,0 +1,7 @@
+.catalog-page-main__header {
+  text-transform: lowercase;
+}
+
+.catalog-page-main__header::first-letter {
+  text-transform: capitalize;
+}
