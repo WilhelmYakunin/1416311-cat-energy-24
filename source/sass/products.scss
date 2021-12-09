@@ -1,0 +1,54 @@
+.products__header--visually-hiden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.products__name {
+  color: rgba(34, 34, 34);
+}
+
+.products__desc--additional {
+  color: rgba(17, 17, 17, 1);
+}
+
+.products__features {
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: capitalize;
+  color: rgba(68, 68, 68);
+}
+
+.products__button {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255);
+  border: 0 none;
+  background: rgba(104, 183, 56);
+}
+
+.products__button--order {
+  background: rgba(104, 183, 56);
+}
+
+.products__button--show-all {
+  color: rgba(68, 68, 68);
+  background-color: rgba(242, 242, 242);
+}
+
+.products__desc--additional-info {
+  text-transform: lowercase;
+  color: rgba(68, 68, 68);
+}
+
+.products__desc--additional-info::first-letter {
+  text-transform: capitalize;
+}

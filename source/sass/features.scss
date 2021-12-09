@@ -1,0 +1,29 @@
+.features__header {
+  text-transform: lowercase;
+}
+
+.features__header::first-letter {
+  text-transform: capitalize;
+}
+
+.features__img {
+  height: 60px;
+  width: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  background: rgba(104, 183, 56);
+}
+
+.features__pic {
+  display: block;
+  margin: 0 auto;
+}
+
+.features__desc {
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: lowercase;
+}
+
+.features__desc::first-letter {
+  text-transform: capitalize;
+}

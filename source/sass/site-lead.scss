@@ -1,0 +1,11 @@
+.site-lead__backgroung-cat {
+  background: center no-repeat url("../img/site-lead-background-cat.svg");
+}
+
+.site-lead__header {
+  text-transform: lowercase;
+}
+
+.site-lead__header::first-letter {
+  text-transform: capitalize;
+}

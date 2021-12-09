@@ -1,0 +1,28 @@
+.additional-products__header {
+  text-transform: lowercase;
+}
+
+.additional-products__header::first-letter {
+  text-transform: capitalize;
+}
+
+.additional-products__name {
+  color: rgba(34, 34, 34);
+}
+
+.additional-products__features {
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: lowercase;
+  color: rgba(68, 68, 68);
+}
+
+.additional-products__button {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255);
+  border: 0 none;
+  background: rgba(104, 183, 56);
+}
+
+.additional-products__button--order {
+  background: rgba(104, 183, 56);
+}
