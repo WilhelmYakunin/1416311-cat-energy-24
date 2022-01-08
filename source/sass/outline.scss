@@ -3,6 +3,7 @@
 
   &--programms {
     width: 90%;
+
     @media (min-width: 767px) {
       position: absolute;
       width: 1px;
@@ -30,6 +31,7 @@
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
+
     @media (min-width: 767px) {
       width: 100%;
     }
@@ -37,6 +39,7 @@
 
   &--footer {
     width: 90%;
+
     @media (min-width: 767px) {
       position: absolute;
       width: 1px;

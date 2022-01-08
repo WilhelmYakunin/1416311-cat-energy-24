@@ -8,7 +8,11 @@ $margin-for-huge-screens: -140px;
   box-sizing: border-box;
 
   @media (max-width: 767px) {
-    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 65%, #fff 45%);
+    background: linear-gradient(
+      180deg,
+      rgba(104, 183, 56, 0.85) 65%,
+      #ffffff 45%
+    );
     color: rgba(255, 255, 255);
 
     display: flex;
@@ -29,7 +33,11 @@ $margin-for-huge-screens: -140px;
     top: $margin-for-huge-screens;
     margin-bottom: calc($margin-for-huge-screens + 80px);
     z-index: -1;
-    background: linear-gradient(90deg, #fff 50%, rgba(104, 183, 56, 0.85) 50%);
+    background: linear-gradient(
+      90deg,
+      #ffffff 50%,
+      rgba(104, 183, 56, 0.85) 50%
+    );
     min-height: 720px;
     padding-top: 220px;
     padding-left: 190px;
@@ -64,11 +72,6 @@ $margin-for-huge-screens: -140px;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
-  }
-}
-
-.site-lead__text {
-  @media (max-width: 767px) {
   }
 }
 

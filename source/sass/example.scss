@@ -3,10 +3,12 @@
 
   padding: 25px 20px;
   background: rgba(234, 234, 234);
+
   @media (min-width: 768px) {
     padding: 40px 30px 60px 30px;
-    background: linear-gradient(180deg, #fff 60%, rgba(234, 234, 234) 40%);
+    background: linear-gradient(180deg, #ffffff 60%, rgba(234, 234, 234) 40%);
   }
+
   @media (min-width: 1440px) {
     padding: 70px 110px 75px 110px;
     background: linear-gradient(#ffffff 30%, rgba(234, 234, 234) 30% 100%);
@@ -23,11 +25,13 @@
     margin-bottom: 40px;
     font-size: 36px;
     line-height: 40px;
+
     @media (min-width: 768px) {
       margin-bottom: 60px;
       font-size: 60px;
       line-height: 60px;
     }
+
     @media (min-width: 1440px) {
       font-size: 60px;
       line-height: 60px;
@@ -39,17 +43,19 @@
       width: 50%;
     }
   }
+
   &__text {
     font-family: "Arial", "Helvetica", sans-serif;
-
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 18px;
+
     @media (min-width: 768px) {
       margin-bottom: 55px;
       font-size: 16px;
       line-height: 24px;
     }
+
     @media (min-width) {
       font-size: 16px;
       line-height: 24px;
@@ -61,6 +67,7 @@
       display: flex;
       justify-content: space-between;
     }
+
     @media (min-width: 1440px) {
       width: 50%;
       flex-direction: column;
@@ -71,10 +78,12 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+
     @media (min-width: 768px) {
       max-width: 360px;
       display: inline-flex;
     }
+
     @media (min-width: 1440px) {
       margin-bottom: 60px;
       min-width: 360px;
@@ -82,13 +91,14 @@
   }
 
   &__fieldset {
-    transform: rotatex(180deg);
+    transform: rotateX(180deg);
     min-width: 125px;
     min-height: 55px;
     width: 35%;
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     border-radius: 3px;
+
     @media (min-width: 768px) {
       margin-right: 40px;
       min-width: 160px;
@@ -97,11 +107,12 @@
   }
 
   &__legend {
-    transform: rotatex(180deg);
+    transform: rotateX(180deg);
     color: rgba(196, 196, 196);
     font-size: 12px;
     line-height: 12px;
     text-align: center;
+
     @media (min-width: 768px) {
       font-size: 16px;
       line-height: 18px;
@@ -109,11 +120,12 @@
   }
 
   &__time-desc {
-    transform: rotatex(180deg);
+    transform: rotateX(180deg);
     text-align: center;
     margin: auto;
     font-size: 24px;
     line-height: 24px;
+
     @media (min-width: 768px) {
       font-size: 30px;
       line-height: 37px;
@@ -128,12 +140,14 @@
     text-align: center;
     font-size: 14px;
     line-height: 20px;
+
     @media (min-width: 768px) {
       flex-direction: column;
       font-size: 20px;
       line-height: 20px;
       text-align: end;
     }
+
     @media (min-width: 1440px) {
       flex-direction: row;
       justify-content: space-between;
@@ -144,6 +158,7 @@
   &__toggle {
     display: flex;
     flex-direction: column;
+
     @media (min-width: 1440px) {
       width: 50%;
     }
@@ -157,7 +172,6 @@
   &__toggler-scrollbar {
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 20px;
     min-width: 210px;
     justify-content: space-around;
@@ -169,6 +183,7 @@
   &__scrollbar--desc {
     font-size: 16px;
     line-height: 20px;
+
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 30px;

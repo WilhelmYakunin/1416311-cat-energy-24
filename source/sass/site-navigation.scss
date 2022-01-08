@@ -40,6 +40,7 @@
 
 .site-navigation__link--active {
   border-bottom: 2px solid #68b738;
+
   @media (min-width: 1440px) {
     border-bottom: 2px solid rgba(255, 255, 255);
   }

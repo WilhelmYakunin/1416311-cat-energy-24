@@ -1,14 +1,17 @@
 .features {
   box-sizing: border-box;
+
   @media (max-width: 767px) {
     margin-top: 20px;
     padding: 0 20px;
   }
+
   @media (min-width: 767px) {
     margin-top: 45px;
     margin-bottom: 50px;
     padding: 0 40px;
   }
+
   @media (min-width: 1440px) {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -18,11 +21,13 @@
   &__header {
     font-weight: normal;
     text-transform: none;
+
     @media (max-width: 767px) {
       margin-bottom: 40px;
       font-size: 36px;
       line-height: 40px;
     }
+
     @media (min-width: 767px) {
       margin-bottom: 70px;
       font-size: 60px;
@@ -31,8 +36,6 @@
   }
 
   &__list {
-    @media (max-width: 767px) {
-    }
     @media (min-width: 767px) {
       display: flex;
       flex-wrap: wrap;
@@ -40,6 +43,7 @@
       max-width: 710px;
       counter-reset: item_num;
     }
+
     @media (min-width: 1440px) {
       max-width: 1220px;
     }
@@ -85,7 +89,6 @@
     color: rgba(242, 242, 242, 1);
     z-index: -1;
     content: counter(item_num);
-    font-family: "Oswald";
     font-size: 280px;
     line-height: 280px;
   }
@@ -97,6 +100,7 @@
     display: flex;
     align-content: center;
     background: rgba(104, 183, 56);
+
     @media (min-width: 767px) {
       margin-bottom: 30px;
       width: 80px;
@@ -113,6 +117,7 @@
     text-transform: none;
     font-size: 14px;
     line-height: 18px;
+
     @media (min-width: 767px) {
       font-size: 16px;
       line-height: 24px;
