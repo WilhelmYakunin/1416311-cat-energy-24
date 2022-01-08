@@ -3,28 +3,32 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="form-page-header page-header">
-      <a href="./index.html" class="form-page-header__logo">
-        <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="200" height="60">
+    <header class="page-header">
+      <a href="./index.html" class="page-header__logo">
+        <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="33" height="38">
       </a>
-      <div class="form-page-header__logo-text">
-        <img src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи">
+      <div class="page-header__logo-text">
+        <img src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
       </div>
-      <nav class="form-page-header__site-navigation">
-        <button class="form-page-header__site-navigation-button"></button>
-        <ul class="form-page-header__site-navigation-list">
-          <li class="form-page-header__site-navigation-item site-navigation">
-            <a href="./index.html" class="form-page-header__link site-navigation">Главная</a>
+      <div class="page-header__site-navigation-button">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="page-header__site-navigation site-navigation">
+        <ul class="page-header__site-navigation-list site-navigation__list">
+          <li class="page-header__site-navigation-item">
+            <a href="./index.html" class="site-navigation__link">Главная</a>
           </li>
-          <li class="form-page-header__site-navigation-item site-navigation">
-            <a href="./catalog.html" class="form-page-header__link">Каталог продукции</a>
+          <li class="page-header__site-navigation-item">
+            <a href="./catalog.html" class="site-navigation__link">Каталог продукции</a>
           </li>
-          <li class="form-page-header__site-navigation-item
-          form-page-header__link--active site-navigation site-navigation">
-            <a href="./form.html" class="form-page-header__link">Подобор программы</a>
+          <li class="page-header__site-navigation-item">
+            <a href="./form.html" class="site-navigation__link site-navigation__link--active">Подобор программы</a>
           </li>
         </ul>
       </nav>
@@ -106,51 +110,56 @@
           <p>* - обязательные поля</p>
         </div>
       </form>
-      <section class="invetation-partners-form-page invetation-partners">
-        <h2 class="invetation-partners__header invetation-partners__header--visually-hidden">
+      <section class="invetation-partners">
+        <h4 class="invetation-partners__header invetation-partners__header--visually-hidden">
           Приглашение к сотрудничеству
-        </h2>
+        </h4>
         <div class="invetation-partners__wrapper">
-          <p class="invetation-partners__desc">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="invetation-partners__desc">
+            Приглашаем
+            <br>к сотрудничеству
+            <br>дилеров!</p>
           <address class="invetation-partners__address">
-            <span class="invetation-partners__address--lowercase">ул.</span> Большая Конюшенная,
-            <span class="invetation-partners__address--lowercase">д.</span> 19/8
-            <span>Санкт-Петербург</span></address>
-          <iframe class="invetation-partners__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853351422233!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638092780524!5m2!1sru!2sru"
-          width="320" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            ул. Большая
+            <br>Конюшенная, д. 19/8
+            <span class="invetation-partners__address--city"><br>Санкт-Петербург</span>
+          </address>
         </div>
+        <div class="invetation-partners__map" id="map" aria-label="map"></div>
       </section>
     </main>
-    <footer class="form-page-footer page-footer">
-      <div class="form-page-footer__text-logo">
+    <footer class="page-footer">
+      <div class="page-footer__text-logo">
         <img src="./img/footer-text-logo.svg" alt="текст лого">
       </div>
-      <div class="form-page-footer__socials">
-        <ul class="social">
-          <li class="social-item social__vk">
-            <a href="#" aria-label="Вконтакте">
-              <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
-            </a>
-          </li>
-          <li class="social-item social__insta">
-            <a href="#" aria-label="Инстаграм">
-              <img src="./img/intagramm-icon.svg" alt="Инстаграм лого">
-            </a>
-          </li>
-          <li class="social-item social__fb">
-            <a href="#" aria-label="Фэйсбук">
-              <img src="./img/facebook-icon.svg" alt="лого Фэйсбук">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="land-page-footer__academy-contet">
-        HTML
-        <span class="land-page-footer__academy-contet--lowercase">Academy</span>
+      <div class="outline outline--footer"></div>
+      <ul class="page-footer__socials">
+        <li class="social-item social__vk">
+          <a href="#" aria-label="Вконтакте">
+            <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
+          </a>
+        </li>
+        <li class="social-item social__insta">
+          <a href="#" aria-label="Инстаграм">
+            <img src="./img/intagramm-icon.svg" alt="Инстаграм лого">
+          </a>
+        </li>
+        <li class="social-item social__fb">
+          <a href="#" aria-label="Фэйсбук">
+             <img src="./img/facebook-icon.svg" alt="лого Фэйсбук">
+          </a>
+        </li>
+      </ul>
+      <div class="outline outline--footer"></div>
+      <div class="page-footer__academy-contet">
+        <p>HTML Academy</p>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
           <img src="./img/htmlacademy.svg" alt="лого акадэми">
         </a>
       </div>
     </footer>
   </body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize">
+  </script>
+  <script src="js/addres-map.js"></script>
 </html>
