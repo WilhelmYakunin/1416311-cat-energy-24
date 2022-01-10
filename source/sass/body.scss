@@ -18,12 +18,35 @@ body {
   line-height: 1;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
 a {
   text-decoration: none;
 }
 
+a:visited {
+  color: rgba(210, 72, 153, 1);
+}
+
+button {
+  border: 0;
+  padding: 0;
+}
+
 ol,
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
