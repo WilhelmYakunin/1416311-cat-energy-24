@@ -32,85 +32,102 @@
           </li>
         </ul>
       </nav>
-    </header>
+  </header>
     <main class="form-page-main page-main">
+      <section class="form-page-main__get-programm">
       <h1 class="form-page-main__header">Подбор программы</h1>
-      <h2 class="form-page-main__slogan">Заполните анкету, и мы подберем
-        <br>программу питания для вашего кота</h2>
+      <p class="form-page-main__slogan">Заполните анкету, и мы подберем
+        <br>программу питания для вашего кота</p>
       <form class="programm-form" action="http://echo.htmlacademy.ru" method="post">
-        <fieldset class="animal-data form-page-field">
+        <div class="programm-form__animal-data-container">
+        <fieldset class="programm-form__fieldset programm-form__fieldset--animal-data-text-input">
           <legend class="animal-data__legend animal-data__legend--visually-hidden">Данные животного</legend>
-          <div>
-            <label for="name">Имя:<sup>*</sup></label>
-            <input type="text" id="name" placeholder="Барсик" required>
+          <div class="programm-form__input-container">
+            <label class="programm-form__label programm-form__label--text" for="name">Имя:<sup>*</sup></label>
+            <input class="programm-form__input programm-form__input--text" type="text" id="name" placeholder="Барсик" required>
           </div>
-          <div>
-            <label for="weight">Вес (кг):<sup>*</sup></label>
-            <input type="number" id="weight" placeholder="7" required>
+          <div class="programm-form__input-container">
+            <label class="programm-form__label programm-form__label--text" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="programm-form__input programm-form__input--text" type="number" id="weight" placeholder="7" required>
           </div>
-          <div>
-            <label for="age">Возраст (лет):</label>
-            <input type="number" id="age" placeholder="7" required>
-          </div>
-        </fieldset>
-        <fieldset class="purpouse-data form-page-field">
-          <legend class="purpouse-data__legend purpouse-data__legend--visually-hidden">Выбор цели программы</legend>
-          <div>
-            <input type="radio" id="loose-weight" name="loose-weight" checked>
-            <label for="loose-weight">Похудение</label>
-          </div>
-          <div>
-            <input type="radio" id="raise-weight" name="raise-weight">
-            <label for="raise-weight">Набор массы</label>
-          </div>
-          <div>
-            <input type="radio" id="need-advise" name="need-advise">
-            <label for="need-advise">Не знаю (нужен ваш совет)</label>
+          <div class="programm-form__input-container">
+            <label class="programm-form__label programm-form__label--text" for="age">Возраст (лет):</label>
+            <input class="programm-form__input programm-form__input--text" type="number" id="age" placeholder="7" required>
           </div>
         </fieldset>
-        <fieldset class="owner-data form-page-field">
-          <legend class="owner-data__legend">Контактеные данные (владельца кота)</legend>
-          <div>
-            <label for="e-mail">e-mail:<sup>*</sup></label>
-            <input type="email" id="e-mail" placeholder="kuklachev@mail.com" required>
-          </div>
-          <div>
-            <label for="phone">Телефон:<sup>*</sup></label>
-            <input type="tel" id="phone" placeholder="8-888-888-**-**" required>
-          </div>
+        <div class="outline outline--form-page-fildset"></div>
+        <fieldset class="purpouse-data programm-form__fieldset programm-form__fieldset--radio-buttons">
+          <label class="programm-form__label programm-form__label--radio">
+            <input type="radio" checked="checked" name="radio">
+            Похудение
+            <span class="programm-form__input programm-form__input--radio"></span>
+          </label>
+          <label class="programm-form__label programm-form__label--radio">
+            <input type="radio" name="radio">
+            Набор массы
+            <span class="programm-form__input programm-form__input--radio"></span>
+          </label>
+          <label class="programm-form__label programm-form__label--radio">
+            <input type="radio" name="radio">
+            Не знаю (нужен ваш совет)
+            <span class="programm-form__input programm-form__input--radio"></span>
+          </label>
         </fieldset>
-        <fieldset class="form-comment form-page-field">
-          <legend class="form-comment__legend form-comment__legend--visually-hidden">Комментарий</legend>
-          <div>
-            <label for="comment" class="form-comment__label form-comment__label--visually-hidden">Комментарий</label>
-            <textarea id="comment" name="comment" rows="10" cols="40"></textarea>
+        </div>
+        <div class="outline outline--form-page-fildset"></div>
+        <fieldset class="programm-form__fieldset programm-form__fieldset--owner-data-background">
+          <label class="programm-form__owner-data-legend">
+            Контактеные данные
+            <span> (владельца кота)</span>
+          </label>
+          <div class="programm-form__owner-data--wrapper">
+          <div class="programm-form__input-container">
+            <label class="programm-form__label programm-form__label--text" for="e-mail">e-mail:<sup>*</sup></label>
+            <input class="programm-form__input programm-form__input--text" type="email" id="e-mail" placeholder="kuklachev@mail.com" required>
           </div>
+          <div class="programm-form__input-container">
+            <label class="programm-form__label programm-form__label--text" for="phone">Телефон:<sup>*</sup></label>
+            <input class="programm-form__input programm-form__input--text" type="tel" id="phone" placeholder="8-888-888-**-**" required>
+          </div>
+        </div>
         </fieldset>
-        <fieldset class="form-additions form-page-field">
-          <legend class="form-additions__legend">Дополнительно</legend>
-          <div>
-            <input type="checkbox" id="sugarless" checked>
-            <label for="sugarless">Сахарозаменитель</label>
-          </div>
-          <div>
-            <input type="checkbox" id="water">
-            <label for="water">Питьевая вода</label>
-          </div>
-          <div>
-            <input type="checkbox" id="milk">
-            <label for="milk">Молоко</label>
-          </div>
-          <div>
-            <input type="checkbox" id="vitamins">
-            <label for="vitamins">Витамины</label>
-          </div>
+        <fieldset class="programm-form__fieldset programm-form__fieldset--comments-background">
+          <label class="programm-form__comments-label" for="comment">Комментарий</label>
+          <textarea class="programm-form__comment-textarea" id="comment" name="comment" rows="10" cols="40"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <input type="button" class="programm-form__send-data-button" value="Отправить заявку">
-        <div class="programm-form__explanation">
-          <p>* - обязательные поля</p>
+        <div class="programm-form__fieldset programm-form__fieldset--addings-background">
+          <h4 class="programm-form__addings-title">Дополнительно</h4>
+          <div class="programm-form__addings--container">
+          <label class="programm-form__addings-label">
+            <input type="checkbox" checked="checked">
+            <span class="programm-form__addings-checkmark"></span>
+            Сахарозаменитель
+          </label>
+          <label class="programm-form__addings-label">
+            <input type="checkbox">
+            <span class="programm-form__addings-checkmark"></span>
+            Питьевая вода
+          </label>
+          <label class="programm-form__addings-label">
+            <input type="checkbox">
+            <span class="programm-form__addings-checkmark"></span>
+            Молоко
+          </label>
+          <label class="programm-form__addings-label">
+            <input type="checkbox">
+            <span class="programm-form__addings-checkmark"></span>
+            Витамины
+          </label>
+        </div>
+        </fieldset>
+        <div class="programm-form__button-container">
+        <input type="button" class="programm-form__button programm-form__button--submit-form" value="Отправить заявку">
+        <p class="programm-form__explanation">* - Обязательные поля</p>
         </div>
       </form>
-      <section class="invetation-partners">
+      </section>
+      <section class="invetation-partners invetation-partners--form-page">
         <h4 class="invetation-partners__header invetation-partners__header--visually-hidden">
           Приглашение к сотрудничеству
         </h4>
@@ -162,4 +179,3 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize">
   </script>
   <script src="js/addres-map.js"></script>
-</html>
