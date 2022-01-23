@@ -218,6 +218,7 @@
   &__scrollbar--desc {
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 
     @media (min-width: 768px) {
       font-size: 20px;
@@ -229,7 +230,7 @@
   &__scrollbar--input {
     display: block;
     position: relative;
-    -webkit-appearance: none;
+    appearance: none;
 
     width: 85px;
     background: #ffffff;
@@ -279,7 +280,7 @@
   @mixin rangeslider__thumb {
     padding: 0;
     margin-top: -14px;
-    -webkit-appearance: none;
+    appearance: none;
     cursor: pointer;
     box-sizing: border-box;
 
@@ -289,7 +290,7 @@
     @media (min-width: 768px) {
       border: 1px solid #cdcdcd;
       border-radius: 17px;
-      background: radial-gradient(circle at 50%, #68b738 20%, #fff 1%);
+      background: radial-gradient(circle at 50%, #68b738 20%, #ffffff 1%);
     }
   }
 
