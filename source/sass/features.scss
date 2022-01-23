@@ -79,14 +79,16 @@
   }
 
   &__item::after {
-    position: absolute;
-    top: -40px;
-    left: 120px;
-    color: rgba(242, 242, 242, 1);
-    z-index: -1;
-    content: counter(item_num);
-    font-size: 280px;
-    line-height: 280px;
+    @media (min-width: 767px) {
+      position: absolute;
+      top: -40px;
+      left: 120px;
+      color: rgba(242, 242, 242, 1);
+      z-index: -1;
+      content: counter(item_num);
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 
   &__pic-container {
