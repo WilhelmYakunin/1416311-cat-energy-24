@@ -228,6 +228,14 @@
   }
 
   &__scrollbar--input {
+    --color: linear-gradient(
+      to right,
+      #68b738 0%,
+      #68b738 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
+
     display: block;
     position: relative;
     appearance: none;
@@ -250,13 +258,6 @@
     display: block;
     cursor: pointer;
     height: 6px;
-    background: linear-gradient(
-      to right,
-      #68b738 0%,
-      #68b738 50%,
-      #ffffff 50%,
-      #ffffff 100%
-    );
     border-radius: 6px;
 
     @media (min-width: 768px) {
@@ -267,14 +268,17 @@
 
   &__scrollbar--input::-ms-track {
     @include rangeslider__track;
+    background: var(--color);
   }
 
   &__scrollbar--input::-webkit-slider-runnable-track {
     @include rangeslider__track;
+    background: var(--color);
   }
 
   &__scrollbar--input::-moz-range-track {
     @include rangeslider__track;
+    background: var(--color);
   }
 
   @mixin rangeslider__thumb {

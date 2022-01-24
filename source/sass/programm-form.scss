@@ -44,9 +44,38 @@ $margin-to-make-appear-background-line: 70px;
     }
   }
 
+  &__owner-data--wrapper {
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__input-e-mail {
+    background-position: right 5% center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-image: url("../img/e-mail-icon.svg");
+
+    @media (min-width: 1440px) {
+      min-width: 490px;
+    }
+  }
+
   &__label--text {
     white-space: nowrap;
     margin-right: 10px;
+  }
+
+  &__input-telephone {
+    background-position: right 5% center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-image: url("../img/telephone-icon.svg");
+
+    @media (min-width: 1440px) {
+      min-width: 490px;
+    }
   }
 
   &__animal-data-container {
