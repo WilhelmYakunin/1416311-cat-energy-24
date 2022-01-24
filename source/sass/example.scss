@@ -164,9 +164,44 @@
     }
   }
 
-  &__fat-cat {
+  &__cats-container {
+    position: relative;
     margin: auto;
+
+    width: 280px;
+    height: 230px;
+
+    @media (min-width: 768px) {
+      width: 600px;
+      height: 510px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin-bottom: 30px;
+    background-size: 280px 100%;
+
+    @media (min-width: 768px) {
+      background-size: 600px 100%;
+    }
+  }
+
+  &--fat-cat {
+    background-color: rgba(234, 234, 234);
+    background-image: url("../img/fat-cat.svg");
+
+    @media (min-width: 768px) {
+      background-color: transparent;
+    }
+  }
+
+  &--thin-cat {
+    background-image: url("../img/thin-cat.png");
   }
 
   &__toggler-scrollbar {
@@ -183,11 +218,91 @@
   &__scrollbar--desc {
     font-size: 16px;
     line-height: 20px;
+    cursor: pointer;
 
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 30px;
       border-bottom: 1px dotted #000000;
     }
+  }
+
+  &__scrollbar--input {
+    display: block;
+    position: relative;
+    appearance: none;
+
+    width: 85px;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 4px;
+
+    @media (min-width: 768px) {
+      background: #dcdcdc;
+      width: 425px;
+      height: 6px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+    }
+  }
+
+  @mixin rangeslider__track {
+    display: block;
+    cursor: pointer;
+    height: 6px;
+    background: linear-gradient(
+      to right,
+      #68b738 0%,
+      #68b738 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
+    border-radius: 6px;
+
+    @media (min-width: 768px) {
+      height: 6px;
+      background: #dcdcdc;
+    }
+  }
+
+  &__scrollbar--input::-ms-track {
+    @include rangeslider__track;
+  }
+
+  &__scrollbar--input::-webkit-slider-runnable-track {
+    @include rangeslider__track;
+  }
+
+  &__scrollbar--input::-moz-range-track {
+    @include rangeslider__track;
+  }
+
+  @mixin rangeslider__thumb {
+    padding: 0;
+    margin-top: -14px;
+    appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    width: 35px;
+    height: 35px;
+
+    @media (min-width: 768px) {
+      border: 1px solid #cdcdcd;
+      border-radius: 17px;
+      background: radial-gradient(circle at 50%, #68b738 20%, #ffffff 1%);
+    }
+  }
+
+  &__scrollbar--input::-webkit-slider-thumb {
+    @include rangeslider__thumb;
+  }
+
+  &__scrollbar--input::-moz-range-thumb {
+    @include rangeslider__thumb;
+  }
+
+  &__scrollbar--input::-ms-thumb {
+    @include rangeslider__thumb;
   }
 }

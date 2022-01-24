@@ -10,29 +10,26 @@
     <header class="page-header">
       <a href="./index.html" class="page-header__logo">
         <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="33" height="38">
+        <img class="page-header__logo-text"
+          src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
       </a>
-      <div class="page-header__logo-text">
-        <img src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
-      </div>
-      <div class="page-header__site-navigation-button">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
       <nav class="page-header__site-navigation site-navigation">
-        <ul class="page-header__site-navigation-list site-navigation__list">
-          <li class="page-header__site-navigation-item">
+        <div id="toggleButton" class="page-header__site-navigation-button">
+          <div class="page-header__site-navigation-button--opened"></div>
+        </div>
+        <ul id="siteMenu" class="site-navigation__list site-navigation__list--closed">
+          <li class="site-navigation__item">
             <a href="./index.html" class="site-navigation__link">Главная</a>
           </li>
-          <li class="page-header__site-navigation-item">
+          <li class="site-navigation__item">
             <a href="./catalog.html" class="site-navigation__link site-navigation__link--active">Каталог продукции</a>
           </li>
-          <li class="page-header__site-navigation-item">
+          <li class="site-navigation__item">
             <a href="./form.html" class="site-navigation__link">Подобор программы</a>
           </li>
         </ul>
       </nav>
-  </header>
+    </header>
     <main class="catalog-page-main page-main">
       <section class="products">
         <h2 class="products__header">Каталог продукции</h2>
@@ -343,4 +340,6 @@
   </body>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize">
   </script>
+  <script src="js/menu-toggle.js"></script>
   <script src="js/addres-map.js"></script>
+</html>
