@@ -1,6 +1,7 @@
 $margin-for-huge-screens: -140px;
 
 .site-lead {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -11,7 +12,7 @@ $margin-for-huge-screens: -140px;
     background: linear-gradient(
       180deg,
       rgba(104, 183, 56, 0.85) 65%,
-      #ffffff 45%
+      rgba(255, 255, 255, 0.85) 45%
     );
     color: rgba(255, 255, 255);
 
@@ -29,10 +30,8 @@ $margin-for-huge-screens: -140px;
   }
 
   @media (min-width: 1440px) {
-    position: relative;
     top: $margin-for-huge-screens;
     margin-bottom: calc($margin-for-huge-screens + 80px);
-    z-index: -1;
     background: linear-gradient(
       90deg,
       #ffffff 50%,
@@ -41,6 +40,44 @@ $margin-for-huge-screens: -140px;
     min-height: 720px;
     padding-top: 220px;
     padding-left: 190px;
+  }
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+
+    @media (max-width: 767px) {
+      height: 65%;
+      width: 100%;
+      top: 0;
+      background: no-repeat url("../img/site-lead-background-cat--mobile.png");
+      background-size: cover;
+      content: "";
+    }
+
+    @media (min-width: 1440px) {
+      height: 100%;
+      width: 50%;
+      right: 0;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      background: no-repeat url("../img/site-lead-background-cat--desctop.png");
+      background-size: cover;
+      content: "";
+    }
+
+    @media (min-resolution: 192dpi) {
+      background-image: no-repeat center
+        url("../img/site-lead-background-cat--mobile.svg");
+      background-size: cover;
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1439px) {
+      background-image: no-repeat center
+        url("../img/site-lead-background-cat--desctop.svg");
+      background-size: cover;
+    }
   }
 
   &__header {
@@ -81,7 +118,6 @@ $margin-for-huge-screens: -140px;
 
     @media (min-width: 767px) {
       position: absolute;
-      z-index: -1;
       left: 30px;
       top: 200px;
       width: 710px;
@@ -90,7 +126,6 @@ $margin-for-huge-screens: -140px;
 
     @media (min-width: 1440px) {
       position: absolute;
-      z-index: 1;
       width: 550px;
       height: 500px;
       left: 575px;

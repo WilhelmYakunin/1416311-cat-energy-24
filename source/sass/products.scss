@@ -74,6 +74,7 @@
   &__card {
     min-height: 110px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     @media (min-width: 768px) {
@@ -86,7 +87,7 @@
 
   &__image {
     margin: auto auto;
-    width: 50%;
+    object-fit: cover;
 
     @media (min-width: 768px) {
       width: 100%;
