@@ -38,7 +38,7 @@ const slideCats = () => {
   inputTrack.style.setProperty("--color", getGradient());
 }
 
-rangeInput.onchange = slideCats;
+rangeInput.oninput = slideCats;
 
 catBefore.onclick = () => {
   rangeInput.value = 0;

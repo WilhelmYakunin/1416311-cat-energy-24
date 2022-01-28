@@ -34,10 +34,13 @@
     <main class="page-main">
       <section class="site-lead">
         <h1 class="site-lead__header">Функционалное <br>питание для котов</h1>
-        <div class="site-lead__backgroung-cat"></div>
         <p class="site-lead__slogan">Занялся собой? Займись котом!</p>
         <a href="./form.html" class="site-lead__programm-button">Подобрать программу</a>
-        <img class="site-lead__pic" src="./img/lead-image.svg" alt="Кэт энерджи продукт банка с вкусняшкой" width="280" height="270">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/lead-image--desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/lead-image--tablet.svg">
+          <img class="site-lead__pic" src="./img/lead-image--mobile.svg" alt="Кэт энерджи продукт банка с вкусняшкой" width="280" height="270">
+        </picture>
       </section>
       <section class="programms-desc">
         <h2 class="programms-desc__header programms-desc__header--visually-hidden">Описание программ</h2>
