@@ -193,7 +193,12 @@
 
   &--fat-cat {
     background-color: rgba(234, 234, 234);
-    background-image: url("../img/fat-cat.svg");
+    background-image: url("../img/index/cat-fat.png");
+
+    @media (min-resolution: 2dppx) {
+      background-color: rgba(234, 234, 234);
+      background-image: url("../img/index/cat-fat@2x.png");
+    }
 
     @media (min-width: 768px) {
       background-color: transparent;
@@ -201,7 +206,11 @@
   }
 
   &--thin-cat {
-    background-image: url("../img/thin-cat.png");
+    background-image: url("../img/index/cat-skinny.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/cat-skinny@2x.png");
+    }
   }
 
   &__toggler-scrollbar {
@@ -219,11 +228,19 @@
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
+    border-bottom: 1px dotted #000000;
 
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 30px;
-      border-bottom: 1px dotted #000000;
+    }
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+
+    &:active {
+      border-bottom: none;
     }
   }
 
@@ -288,13 +305,20 @@
     cursor: pointer;
     box-sizing: border-box;
 
-    width: 35px;
-    height: 35px;
+    width: 5px;
+    height: 5px;
 
     @media (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      box-shadow: 0px 1px 1px #cdcdcd;
       border: 1px solid #cdcdcd;
       border-radius: 17px;
       background: radial-gradient(circle at 50%, #68b738 20%, #ffffff 1%);
+    }
+
+    &:active {
+      border: 1px solid #68b738;
     }
   }
 

@@ -49,24 +49,12 @@
     width: 100%;
     z-index: -1;
     position: absolute;
-    background: no-repeat center url("../img/order-all-background--small.png");
+    background: no-repeat center url("../img/form/order-all-bg.png");
     background-size: cover;
     content: "";
 
-    @media (min-width: 768px) and (max-width: 1439px) {
-      background: no-repeat center url("../img/order-all-background-medium.png");
-      background-size: cover;
-    }
-
-    @media (min-resolution: 192dpi) {
-      background-image: no-repeat center
-        url("../img/order-all-background--small2x.svg");
-      background-size: cover;
-    }
-
-    @media (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1439px) {
-      background-image: no-repeat center
-        url("../img/order-all-background-medium2x.svg");
+    @media (min-resolution: 2dppx) {
+      background-image: no-repeat center url("../img/form/order-all-bg@2x.png");
       background-size: cover;
     }
   }
