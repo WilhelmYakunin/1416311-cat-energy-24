@@ -95,6 +95,7 @@ $margin-for-huge-screens: -140px;
 
   &__slogan {
     z-index: 1;
+
     @media (max-width: 767px) {
       margin-bottom: 25px;
       font-size: 14px;
