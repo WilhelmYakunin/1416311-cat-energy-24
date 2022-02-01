@@ -51,12 +51,12 @@ $margin-for-huge-screens: -140px;
       height: 65%;
       width: 100%;
       top: 0;
-      background: no-repeat url("../img/index/lead-background.png");
+      background: no-repeat url("../img/lead-background.png");
       background-size: cover;
     }
 
     @media (min-resolution: 2dppx) and (max-width: 767px) {
-      background: no-repeat url("../img/index/lead-background@2x.png");
+      background: no-repeat url("../img/lead-background@2x.png");
       background-size: cover;
     }
 
@@ -66,12 +66,12 @@ $margin-for-huge-screens: -140px;
       right: 0;
       position: absolute;
       top: 0;
-      background: no-repeat url("../img/index/lead-background-1440px.png");
+      background: no-repeat url("../img/lead-background-1440px.png");
       background-size: cover;
     }
 
     @media (min-resolution: 2dppx) and (min-width: 1440px) {
-      background: no-repeat url("../img/index/lead-background-1440px@2x.png");
+      background: no-repeat url("../img/lead-background-1440px@2x.png");
       background-size: cover;
     }
   }
