@@ -8,11 +8,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="./index.html" class="page-header__logo">
-        <img src="./img/header-logo.svg" alt="изображение логотипа-кота" width="33" height="38">
+      <div class="page-header__logo">
+        <a href="./index.html">
+        <picture>
+          <source media="(min-width: 1440px)" widht="202" height="60"
+          srcset="./img/header/logo-1440px.png 1x, ./img/header/logo-1440px@2x.png 2x">
+          <source media="(min-width: 768px)" widht="174" height="52"
+          srcset="./img/header/logo-768px.png 1x, ./img/header/logo-768px@2x.png 2x">
+          <img src="./img/header/logo.png" alt="изображение логотипа-кота" width="33" height="38"
+          srcset="./img/header/logo@2x.png 2x">
+        </picture>
+        </a>
         <img class="page-header__logo-text"
-          src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
-      </a>
+        src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
+      </div>
       <nav class="page-header__site-navigation site-navigation">
         <div id="toggleButton" class="page-header__site-navigation-button">
           <div class="page-header__site-navigation-button--opened"></div>
