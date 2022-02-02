@@ -72,9 +72,15 @@
     }
 
     &:visited {
-      @media (max-width: 767px) {
-        color: #000000;
-      }
+      color: #000000;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

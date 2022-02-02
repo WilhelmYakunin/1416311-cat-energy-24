@@ -21,9 +21,18 @@
   &__logo {
     display: flex;
     align-items: center;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__logo-text {
+    cursor: pointer;
     margin: auto;
 
     @media (min-width: 768px) {

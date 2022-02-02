@@ -36,12 +36,12 @@
     width: 100%;
     z-index: -1;
     position: absolute;
-    background: no-repeat center url("../img/form/order-all-bg.png");
+    background: no-repeat center url("../img/order-all-bg.webp");
     background-size: cover;
     content: "";
 
     @media (min-resolution: 2dppx) {
-      background-image: no-repeat center url("../img/form/order-all-bg@2x.png");
+      background-image: no-repeat center url("../img/order-all-bg@2x.webp");
       background-size: cover;
     }
   }

@@ -2,6 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="img/fav-32.webp">
+    <link rel="icon" href="img/fav-svg32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/fav-apple180.webp">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
@@ -12,11 +16,11 @@
         <a href="./index.html">
         <picture>
           <source media="(min-width: 1440px)" widht="202" height="60"
-          srcset="./img/header/logo-1440px.png 1x, ./img/header/logo-1440px@2x.png 2x">
+          srcset="./img/logo-1440px.webp 1x, ./img/logo-1440px@2x.webp 2x">
           <source media="(min-width: 768px)" widht="174" height="52"
-          srcset="./img/header/logo-768px.png 1x, ./img/header/logo-768px@2x.png 2x">
-          <img src="./img/header/logo.png" alt="изображение логотипа-кота" width="33" height="38"
-          srcset="./img/header/logo@2x.png 2x">
+          srcset="./img/logo-768px.webp 1x, ./img/logo-768px@2x.webp 2x">
+          <img src="./img/logo.webp" alt="изображение логотипа-кота" width="33" height="38"
+          srcset="./img/logo@2x.webp 2x">
         </picture>
         </a>
         <img class="page-header__logo-text"
@@ -155,23 +159,32 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__text-logo">
-        <img src="./img/footer-text-logo.svg" alt="текст лого">
+        <img src="./img/footer-text-logo.svg" alt="текст лого" width="128" height="24">
       </div>
       <div class="outline outline--footer"></div>
       <ul class="page-footer__socials">
-        <li class="social-item social__vk">
-          <a href="#" aria-label="Вконтакте">
-            <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
+        <li>
+          <a class="page-footer__social-link" href="#" aria-label="Вконтакте">
+            <picture class="features__img">
+              <source media="(min-width: 768px)" height="17" width="29">
+              <img class="page-footer__social-vk" src="./img/vkontakte-icon.svg" alt="Вконтакте лого" height="12" width="22">
+            </picture>
           </a>
         </li>
-        <li class="social-item social__insta">
-          <a href="#" aria-label="Инстаграм">
-            <img src="./img/intagramm-icon.svg" alt="Инстаграм лого">
+        <li>
+          <a class="page-footer__social-link" href="#" aria-label="Инстаграм">
+            <picture class="features__img">
+              <source media="(min-width: 768px)" height="23" width="23">
+              <img class="page-footer__social-insta" src="./img/intagramm-icon.svg" alt="Инстаграм лого" height="16" width="16">
+            </picture>
           </a>
         </li>
-        <li class="social-item social__fb">
-          <a href="#" aria-label="Фэйсбук">
-            <img src="./img/facebook-icon.svg" alt="лого Фэйсбук">
+        <li>
+          <a class="page-footer__social-link" href="#" aria-label="Фэйсбук">
+            <picture class="features__img">
+              <source media="(min-width: 768px)" height="27" width="13">
+              <img class="page-footer__facebook" src="./img/facebook-icon.svg" alt="лого Фэйсбук" height="18" width="10">
+          </picture>
           </a>
         </li>
       </ul>
@@ -179,7 +192,7 @@
       <div class="page-footer__academy-contet">
         <p>HTML Academy</p>
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
-          <img src="./img/htmlacademy.svg" alt="лого акадэми">
+          <img src="./img/htmlacademy.svg" alt="лого акадэми" width="27" height="34">
         </a>
       </div>
     </footer>

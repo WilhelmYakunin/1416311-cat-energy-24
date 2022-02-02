@@ -51,12 +51,12 @@ $margin-for-huge-screens: -140px;
       height: 65%;
       width: 100%;
       top: 0;
-      background: no-repeat url("../img/index/lead-background.png");
+      background: no-repeat url("../img/lead-background.webp");
       background-size: cover;
     }
 
     @media (min-resolution: 2dppx) and (max-width: 767px) {
-      background: no-repeat url("../img/index/lead-background@2x.png");
+      background: no-repeat url("../img/lead-background@2x.webp");
       background-size: cover;
     }
 
@@ -66,12 +66,12 @@ $margin-for-huge-screens: -140px;
       right: 0;
       position: absolute;
       top: 0;
-      background: no-repeat url("../img/index/lead-background-1440px.png");
+      background: no-repeat url("../img/lead-background-1440px.webp");
       background-size: cover;
     }
 
     @media (min-resolution: 2dppx) and (min-width: 1440px) {
-      background: no-repeat url("../img/index/lead-background-1440px@2x.png");
+      background: no-repeat url("../img/lead-background-1440px@2x.webp");
       background-size: cover;
     }
   }
@@ -94,8 +94,6 @@ $margin-for-huge-screens: -140px;
   }
 
   &__slogan {
-    z-index: 1;
-
     @media (max-width: 767px) {
       margin-bottom: 25px;
       font-size: 14px;
@@ -103,6 +101,7 @@ $margin-for-huge-screens: -140px;
     }
 
     @media (min-width: 767px) {
+      z-index: 1;
       margin-bottom: 50px;
       font-size: 20px;
       line-height: 20px;
@@ -132,7 +131,6 @@ $margin-for-huge-screens: -140px;
   }
 
   &__programm-button {
-    z-index: 1;
     color: rgba(255, 255, 255);
     background: rgba(104, 183, 56);
     cursor: pointer;
@@ -146,11 +144,25 @@ $margin-for-huge-screens: -140px;
     line-height: 18px;
 
     @media (min-width: 767px) {
+      z-index: 1;
       margin: 0;
       box-sizing: border-box;
       text-align: center;
       max-width: 245px;
       padding: 15px 25px;
+    }
+
+    &:visited {
+      color: #ffffff;
+    }
+
+    &:hover {
+      background: rgba(94, 170, 47, 1);
+    }
+
+    &:active {
+      background: rgba(94, 170, 47, 1);
+      opacity: 0.3;
     }
   }
 }
