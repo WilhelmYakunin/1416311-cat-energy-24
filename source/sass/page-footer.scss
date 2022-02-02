@@ -21,15 +21,29 @@
     max-width: 1440px;
     padding: 60px 100px;
   }
+
+  &__social-vk:hover {
+    background-image: url("../img/icon_vkontakte-hover.svg");
+  }
 }
 
 .page-footer__text-logo {
+  cursor: pointer;
+
   @media (max-width: 767px) {
     margin: auto;
   }
 
   @media (min-width: 767px) {
     width: 130px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -48,7 +62,18 @@
   }
 }
 
+.page-footer__social-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__academy-contet {
+  cursor: pointer;
   color: rgba(68, 68, 68);
   text-transform: none;
   display: flex;
@@ -64,5 +89,13 @@
 
   @media (min-width: 767px) {
     width: 165px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

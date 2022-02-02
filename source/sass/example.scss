@@ -193,35 +193,28 @@
 
   &--fat-cat {
     background-color: rgba(234, 234, 234);
-    background-image: url("../img/cat-fat.png");
+    background-image: url("../img/cat-fat.webp");
 
     @media (min-resolution: 2dppx) {
-      background-color: rgba(234, 234, 234);
-      background-image: url("../img/cat-fat@2x.png");
+      background-image: url("../img/cat-fat@2x.webp");
     }
 
     @media (min-width: 768px) {
-      background-color: linear-gradient(
-        180deg,
-        #ffffff 50%,
-        rgba(234, 234, 234) 50%
-      );
+      background-image: url("../img/cat-fat.webp"),
+        linear-gradient(180deg, #ffffff 43.5%, rgba(234, 234, 234) 43.5%);
     }
 
     @media (min-width: 1440px) {
-      background-color: linear-gradient(
-        180deg,
-        #ffffff 50%,
-        rgba(234, 234, 234) 50%
-      );
+      background-image: url("../img/cat-fat.webp"),
+        linear-gradient(#ffffff 11.4%, rgba(234, 234, 234) 11.4% 100%);
     }
   }
 
   &--thin-cat {
-    background-image: url("../img/cat-skinny.png");
+    background-image: url("../img/cat-skinny.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-skinny@2x.png");
+      background-image: url("../img/cat-skinny@2x.webp");
     }
   }
 

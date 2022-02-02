@@ -55,11 +55,19 @@ $margin-to-make-appear-background-line: 70px;
     background-position: right 5% center;
     background-repeat: no-repeat;
     background-size: 18px;
-    background-image: url("../img/e-mail-icon.svg");
+    background-image: url("../img/icon_email.svg");
 
     @media (min-width: 1440px) {
       min-width: 490px;
     }
+
+    // &:valid {
+    //   background-image: url("../img/email-valid.svg");
+    // }
+
+    // &:invalid {
+    //   background-image: url("../img/email-invalid.svg");
+    // }
   }
 
   &__label--text {
@@ -76,6 +84,14 @@ $margin-to-make-appear-background-line: 70px;
     @media (min-width: 1440px) {
       min-width: 490px;
     }
+
+    // &:valid {
+    //   background-image: url("../img/telephone-icon-valid.svg");
+    // }
+
+    // &:invalid {
+    //   background-image: url("../img/telephone-icon-invalid.svg");
+    // }
   }
 
   &__animal-data-container {

@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Oswald";
+  font-display: swap;
   src: url("../fonts/oswaldmedium.woff") format("woff"),
     url("../fonts/oswaldmedium.woff2") format("woff2");
 }
@@ -31,10 +32,6 @@ h6 {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
-  color: rgba(210, 72, 153, 1);
 }
 
 button {

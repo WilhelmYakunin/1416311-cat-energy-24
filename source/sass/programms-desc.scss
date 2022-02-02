@@ -130,6 +130,18 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    &:visited {
+      color: #000000;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__footer-arrow--right-long {
