@@ -21,7 +21,9 @@
   &__logo {
     display: flex;
     align-items: center;
+  }
 
+  &__logo-link {
     &:hover {
       opacity: 0.6;
     }
@@ -32,7 +34,6 @@
   }
 
   &__logo-text {
-    cursor: pointer;
     margin: auto;
 
     @media (min-width: 768px) {

@@ -22,80 +22,78 @@
     padding: 60px 100px;
   }
 
-  &__social-vk:hover {
-    background-image: url("../img/icon_vkontakte-hover.svg");
+  &__text-logo {
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+      margin: auto;
+    }
+
+    @media (min-width: 767px) {
+      width: 130px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
-}
 
-.page-footer__text-logo {
-  cursor: pointer;
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @media (max-width: 767px) {
-    margin: auto;
+    @media (max-width: 767px) {
+      min-width: 25%;
+      margin: auto;
+    }
+
+    @media (min-width: 767px) {
+      width: 135px;
+    }
   }
 
-  @media (min-width: 767px) {
-    width: 130px;
+  &__social-link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
-  &:hover {
+  &__academy-contet {
+    cursor: pointer;
+    color: rgba(68, 68, 68);
+    text-transform: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: auto;
+    }
+
+    @media (min-width: 767px) {
+      width: 165px;
+    }
+  }
+
+  &__link:hover {
     opacity: 0.6;
+    filter: invert(54%) sepia(9%) saturate(3110%) hue-rotate(54deg)
+      brightness(115%) contrast(88%);
   }
 
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-footer__socials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 767px) {
-    min-width: 25%;
-    margin: auto;
-  }
-
-  @media (min-width: 767px) {
-    width: 135px;
-  }
-}
-
-.page-footer__social-link {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-footer__academy-contet {
-  cursor: pointer;
-  color: rgba(68, 68, 68);
-  text-transform: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  line-height: 18px;
-
-  @media (max-width: 767px) {
-    width: 100%;
-    margin: auto;
-  }
-
-  @media (min-width: 767px) {
-    width: 165px;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
+  &__link:hover {
     opacity: 0.3;
   }
 }

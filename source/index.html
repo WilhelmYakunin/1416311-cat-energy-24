@@ -13,7 +13,7 @@
   <body>
     <header class="page-header">
         <div class="page-header__logo">
-          <a href="./index.html">
+          <a class="page-header__logo-link" href="./index.html">
           <picture>
             <source media="(min-width: 1440px)" widht="202" height="60"
             srcset="./img/logo-1440px.webp 1x, ./img/logo-1440px@2x.webp 2x">
@@ -223,32 +223,35 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__text-logo">
+      <a class="page-footer__text-logo" href="./index.html">
         <img src="./img/footer-text-logo.svg" alt="текст лого" width="128" height="24">
-      </div>
+      </a>
       <div class="outline outline--footer"></div>
       <ul class="page-footer__socials">
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Вконтакте">
-            <picture class="features__img">
+          <a class="page-footer__link" href="https://vk.com/htmlacademy"
+          target="_blank" aria-label="Вконтакте">
+            <picture>
               <source media="(min-width: 768px)" height="17" width="29">
-              <img class="page-footer__social-vk" src="./img/vkontakte-icon.svg" alt="Вконтакте лого" height="12" width="22">
+              <img src="./img/vkontakte-icon.svg" alt="Вконтакте лого" height="12" width="22">
             </picture>
           </a>
         </li>
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Инстаграм">
-            <picture class="features__img">
+          <a class="page-footer__link" href="https://www.instagram.com/htmlacademy/"
+          aria-label="Инстаграм" target="_blank">
+            <picture>
               <source media="(min-width: 768px)" height="23" width="23">
-              <img class="page-footer__social-insta" src="./img/intagramm-icon.svg" alt="Инстаграм лого" height="16" width="16">
+              <img src="./img/intagramm-icon.svg" alt="Инстаграм лого" height="16" width="16">
             </picture>
           </a>
         </li>
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Фэйсбук">
-            <picture class="features__img">
+          <a class="page-footer__link" href="https://ru-ru.facebook.com/htmlacademy/"
+          target="_blank" aria-label="Фэйсбук">
+            <picture>
               <source media="(min-width: 768px)" height="27" width="13">
-              <img class="page-footer__facebook" src="./img/facebook-icon.svg" alt="лого Фэйсбук" height="18" width="10">
+              <img src="./img/facebook-icon.svg" alt="лого Фэйсбук" height="18" width="10">
           </picture>
           </a>
         </li>
@@ -256,7 +259,8 @@
       <div class="outline outline--footer"></div>
       <div class="page-footer__academy-contet">
         <p>HTML Academy</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank" title="Курс адаптивной вёрстки сайтов">
           <img src="./img/htmlacademy.svg" alt="лого акадэми" width="27" height="34">
         </a>
       </div>
