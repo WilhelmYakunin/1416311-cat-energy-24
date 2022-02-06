@@ -54,15 +54,15 @@
           <legend class="programm-form__legend programm-form__legend--visually-hidden">Данные животного</legend>
           <div class="programm-form__input-container">
             <label class="programm-form__label programm-form__label--text" for="name">Имя:<sup>*</sup></label>
-            <input class="programm-form__input programm-form__input--text" type="text" placeholder="Барсик" required>
+            <input class="programm-form__input programm-form__input--text" id="name" type="text" placeholder="Барсик" required>
           </div>
           <div class="programm-form__input-container">
             <label class="programm-form__label programm-form__label--text" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="programm-form__input programm-form__input--text" type="number" placeholder="7" required>
+            <input class="programm-form__input programm-form__input--text" id="weight" type="number" placeholder="7" required>
           </div>
           <div class="programm-form__input-container">
             <label class="programm-form__label programm-form__label--text" for="age">Возраст (лет):</label>
-            <input class="programm-form__input programm-form__input--text" type="number" placeholder="7" required>
+            <input class="programm-form__input programm-form__input--text" id="age" type="number" placeholder="7" required>
           </div>
         </fieldset>
         <div class="outline outline--form-page-fildset"></div>
@@ -94,19 +94,19 @@
           <div class="programm-form__input-container">
             <label class="programm-form__label programm-form__label--text" for="e-mail">e-mail:<sup>*</sup></label>
             <input class="programm-form__input programm-form__input--text programm-form__input-e-mail"
-              type="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+              type="email" placeholder="KUKLACHEV@GMAIL.COM" id="e-mail" required>
           </div>
           <div class="programm-form__input-container">
             <label class="programm-form__label programm-form__label--text" for="phone">Телефон:<sup>*</sup></label>
             <input class="programm-form__input programm-form__input--text programm-form__input-telephone"
-              type="tel" placeholder="8 (960) 900-60-90" required>
+              type="tel" placeholder="8 (960) 900-60-90" id="phone" required>
           </div>
         </div>
         </fieldset>
         <fieldset class="programm-form__fieldset programm-form__fieldset--comments-background">
           <label class="programm-form__comments-label" for="comment">Комментарий</label>
           <textarea class="programm-form__comment-textarea" name="comment" rows="10" cols="40"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+          placeholder="Расскажите обо всех повадках кота" id="comment"></textarea>
         </fieldset>
         <div class="programm-form__fieldset programm-form__fieldset--addings-background">
           <h4 class="programm-form__addings-title">Дополнительно</h4>
