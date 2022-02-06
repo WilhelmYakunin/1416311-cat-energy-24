@@ -99,31 +99,31 @@
     content: "";
 
     background-size: cover;
-    background: no-repeat center url("../img/location.webp");
+    background-image: no-repeat center url("../img/location.webp");
 
     @media (min-resolution: 2dppx) {
       background-size: cover;
-      background: no-repeat center url("../img/location@2x.webp");
+      background-image: no-repeat center url("../img/location@2x.webp");
     }
 
     @media (min-width: 768px) {
       background-size: cover;
-      background: no-repeat center url("../img/location-768px.webp");
+      background-image: no-repeat center url("../img/location-768px.webp");
     }
 
     @media (min-width: 768px) and (min-resolution: 2dppx) {
       background-size: cover;
-      background: no-repeat center url("../img/location-768px@2x.webp");
+      background-image: no-repeat center url("../img/location-768px@2x.webp");
     }
 
     @media (min-width: 1440px) {
       background-size: cover;
-      background: no-repeat center url("../img/location-1440px.webp");
+      background-image: no-repeat center url("../img/location-1440px.webp");
     }
 
     @media (min-width: 1440px) and (min-resolution: 2dppx) {
       background-size: cover;
-      background: no-repeat center url("../img/location-1440px@2x.webp");
+      background-image: no-repeat center url("../img/location-1440px@2x.webp");
     }
   }
 
