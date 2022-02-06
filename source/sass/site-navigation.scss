@@ -37,6 +37,10 @@
     }
   }
 
+  &__list--no-js {
+    position: static;
+  }
+
   &__list--closed {
     @media (max-width: 767px) {
       position: absolute;
@@ -52,6 +56,70 @@
     }
   }
 
+  &__toggler {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    min-width: 25px;
+    min-height: 25px;
+    display: block;
+    cursor: pointer;
+
+    @media (min-width: 767px) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  }
+
+  &__toggler--nojs {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  &__toggler-opened {
+    content: "";
+    height: 1.5px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  &__toggler-closed {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      width: 25px;
+      height: 1.5px;
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
   &__item {
     @media (max-width: 767px) {
       width: 100%;
@@ -62,6 +130,7 @@
   }
 
   &__link {
+    padding-bottom: 10px;
     text-transform: uppercase;
 
     @media (max-width: 767px) {

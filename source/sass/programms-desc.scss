@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  background: #f2f2f2;
 
   @media (max-width: 767px) {
     margin-bottom: 20px;
@@ -121,6 +122,8 @@
   }
 
   &__footer {
+    position: relative;
+    text-transform: uppercase;
     @media (max-width: 767px) {
       font-size: 16px;
       line-height: 16px;
@@ -144,30 +147,79 @@
     }
   }
 
-  &__footer-arrow--right-long {
+  &__footer::before {
+    cursor: pointer;
+    content: "";
     display: inline-block;
-    position: relative;
-    left: 15px;
-    top: -5px;
+    position: absolute;
+    left: 110px;
+    top: 8px;
     width: 18px;
     height: 2px;
     background: #000000;
+    animation-duration: 4s;
 
     @media (min-width: 767px) {
-      top: -7px;
+      top: 16px;
+      left: 120px;
     }
   }
 
-  &__footer-arrow--right-long::after {
-    position: absolute;
-    left: 15px;
-    bottom: -4px;
+  &__footer::after {
+    cursor: pointer;
     content: "";
+    position: absolute;
+    left: 128px;
+    top: 4px;
     border: 5px solid #000000;
     border-left-width: 7px;
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-right-color: transparent;
+
+    @media (min-width: 768px) {
+      top: 12px;
+      left: 138px;
+    }
+  }
+
+  &__footer:hover::before {
+    animation: grown 1s ease-in-out;
+  }
+
+  &__footer:hover::after {
+    animation: move-horizontally 1s ease-in-out;
+
+    @media (min-width: 768px) {
+      animation: move-horizontally-768 1s ease-in-out;
+    }
+  }
+
+  @keyframes grown {
+    from {
+      width: 18px;
+    }
+    to {
+      width: 26px;
+    }
+  }
+
+  @keyframes move-horizontally {
+    from {
+      left: 128px;
+    }
+    to {
+      left: 136px;
+    }
+  }
+
+  @keyframes move-horizontally-768 {
+    from {
+      left: 138px;
+    }
+    to {
+      left: 146px;
+    }
   }
 }
 

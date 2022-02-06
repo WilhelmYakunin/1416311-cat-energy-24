@@ -1,7 +1,7 @@
-const rangeInput = document.getElementById('sliderInput');
-const fatCatImg = document.getElementById('fatCat');
-const catBefore = document.getElementById('catBefore');
-const catAfter = document.getElementById('catAfter');
+const rangeInput = document.querySelector('.example__scrollbar--input');
+const fatCatImg = document.querySelector('.example__fat-cat');
+const catBefore = document.querySelector('.example__scrollbar-before');
+const catAfter = document.querySelector('.example__scrollbar-after');
 const inputTrack = document.getElementsByClassName('example__scrollbar--input')[0];
 
 const slideCats = () => {

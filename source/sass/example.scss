@@ -191,7 +191,7 @@
     }
   }
 
-  &--fat-cat {
+  &__fat-cat {
     background-color: rgba(234, 234, 234);
     background-image: url("../img/cat-fat.webp");
 
@@ -210,7 +210,7 @@
     }
   }
 
-  &--thin-cat {
+  &__thin-cat {
     background-image: url("../img/cat-skinny.webp");
 
     @media (min-resolution: 2dppx) {

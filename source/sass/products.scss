@@ -207,7 +207,7 @@
     text-align: center;
 
     @media (min-width: 768px) {
-      margin-bottom: 0;
+      margin-top: 80px;
       min-height: 430px;
       height: 430px;
       max-width: 325px;
@@ -221,7 +221,7 @@
     }
   }
 
-  &__desc--additional {
+  &__desc-additional {
     width: 100%;
     color: rgba(17, 17, 17, 1);
     text-transform: uppercase;
@@ -234,7 +234,7 @@
     }
   }
 
-  &__desc--additional-info {
+  &__desc-additional-info {
     color: rgba(68, 68, 68);
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 12px;

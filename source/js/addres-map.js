@@ -26,7 +26,7 @@ const pinCenter = viewport < TABLET_WIDTH ? {lat: 59.93871, lng: 30.32323} : {la
 const pinSize = viewport < TABLET_WIDTH ? SMALL_PIN : BIG_PIN;
 
 
-const map = new google.maps.Map(document.getElementById('map'), {
+const map = new google.maps.Map(document.querySelector('.invetation-partners__map'), {
 zoom: 17,
 center: mapCenter
 });

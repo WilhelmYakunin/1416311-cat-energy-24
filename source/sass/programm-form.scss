@@ -44,7 +44,7 @@ $margin-to-make-appear-background-line: 70px;
     }
   }
 
-  &__owner-data--wrapper {
+  &__owner-data-wrapper {
     @media (min-width: 1440px) {
       display: flex;
       justify-content: space-between;
@@ -61,13 +61,13 @@ $margin-to-make-appear-background-line: 70px;
       min-width: 490px;
     }
 
-    // &:valid {
-    //   background-image: url("../img/email-valid.svg");
-    // }
+    &:valid {
+      background-image: url("../img/email-valid.svg");
+    }
 
-    // &:invalid {
-    //   background-image: url("../img/email-invalid.svg");
-    // }
+    &:invalid {
+      background-image: url("../img/email-invalid.svg");
+    }
   }
 
   &__label--text {
@@ -85,13 +85,13 @@ $margin-to-make-appear-background-line: 70px;
       min-width: 490px;
     }
 
-    // &:valid {
-    //   background-image: url("../img/telephone-icon-valid.svg");
-    // }
+    &:valid {
+      background-image: url("../img/telephone-icon-valid.svg");
+    }
 
-    // &:invalid {
-    //   background-image: url("../img/telephone-icon-invalid.svg");
-    // }
+    &:invalid {
+      background-image: url("../img/telephone-icon-invalid.svg");
+    }
   }
 
   &__animal-data-container {
@@ -337,7 +337,7 @@ $margin-to-make-appear-background-line: 70px;
     }
   }
 
-  &__addings--container {
+  &__addings-container {
     display: flex;
     flex-direction: column;
 
@@ -463,6 +463,15 @@ $margin-to-make-appear-background-line: 70px;
       margin-right: 60px;
       margin-bottom: 0;
     }
+
+    &:hover {
+      background: rgba(94, 170, 47, 1);
+    }
+
+    &:active {
+      background: rgba(94, 170, 47, 1);
+      opacity: 0.3;
+    }
   }
 
   &__explanation {
@@ -474,5 +483,21 @@ $margin-to-make-appear-background-line: 70px;
     @media (min-width: 768px) {
       margin: auto 0;
     }
+  }
+
+  &__legend--visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }

@@ -13,13 +13,13 @@
   <body>
     <header class="page-header">
         <div class="page-header__logo">
-          <a href="./index.html">
+          <a class="page-header__logo-img" href="./index.html">
           <picture>
-            <source media="(min-width: 1440px)" widht="202" height="60"
+            <source media="(min-width: 1440px)"
             srcset="./img/logo-1440px.webp 1x, ./img/logo-1440px@2x.webp 2x">
-            <source media="(min-width: 768px)" widht="174" height="52"
+            <source media="(min-width: 768px)"
             srcset="./img/logo-768px.webp 1x, ./img/logo-768px@2x.webp 2x">
-            <img src="./img/logo.webp" alt="изображение логотипа-кота" width="33" height="38"
+            <img src="./img/logo.webp" alt="изображение логотипа-кота"
             srcset="./img/logo@2x.webp 2x">
           </picture>
           </a>
@@ -27,10 +27,10 @@
           src="./img/header-text-logo.svg" alt="изображение логотипа словесное обозначение энерджи" width="100" height="18">
         </div>
         <nav class="page-header__site-navigation site-navigation">
-          <div id="toggleButton" class="page-header__site-navigation-button">
-            <div class="page-header__site-navigation-button--opened"></div>
+          <div class="site-navigation__toggler">
+            <div class="site-navigation__toggler-opened site-navigation__toggler--nojs"></div>
           </div>
-          <ul id="siteMenu" class="site-navigation__list site-navigation__list--closed">
+          <ul class="site-navigation__list site-navigation__list--no-js">
             <li class="site-navigation__item">
               <a href="./index.html" class="site-navigation__link
               site-navigation__link--active-main-page">Главная</a>
@@ -49,9 +49,9 @@
         <h1 class="site-lead__header">Функционалное <br>питание для котов</h1>
         <p class="site-lead__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1440px)" widht="550" height="500"
+          <source media="(min-width: 1440px)"
           srcset="./img/can-1440px.webp 1x, ./img/can-1440px@2x.webp 2x">
-          <source media="(min-width: 768px)" widht="709" height="609"
+          <source media="(min-width: 768px)"
           srcset="./img/can-768px.webp 1x, ./img/can-768px@2x.webp 2x">
           <img class="site-lead__pic" src="./img/can.webp" alt="Кэт энерджи продукт банка с вкусняшкой" width="280" height="270"
           srcset="./img/can@2x.webp 2x">
@@ -65,10 +65,10 @@
               <div class="programms-desc-item__header">
                 <div class="programms-desc-item__pic-container">
                   <picture class="programms-desc-item__img">
-                    <source media="(min-width: 1440px)" widht="70" height="97" srcset="./img/cat-slim.svg">
-                    <source media="(min-width: 768px)" widht="140" height="194" srcset="./img/cat-slim.svg">
-                    <img src="./img/cat-slim.svg" alt="Изображение стройной кошки"
-                    width="35" height="50">
+                    <source media="(min-width: 1440px)" srcset="./img/cat-slim-1440px.webp 1x, /img/cat-slim-1440px@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/cat-slim-768px.webp 1x, /img/cat-slim-768px@2x.webp 2x">
+                    <img src="./img/cat-slim.webp" alt="Изображение стройной кошки"
+                    srcset="./img/cat-slim@2x.webp 2x">
                   </picture>
                 </div>
                 <h4 class="programms-desc-item__header-content">Похудение</h4>
@@ -84,7 +84,6 @@
               <div class="programms-desc-item__footer">
                 <a href="./catalog.html" class="programms-desc-item__footer-content">
                   Каталог slim
-                  <span class="programms-desc-item__footer-arrow--right-long"></span>
                 </a>
               </div>
             </li>
@@ -92,9 +91,10 @@
               <div class="programms-desc-item__header">
                 <div class="programms-desc-item__pic-container">
                   <picture class="programms-desc-item__img">
-                    <source media="(min-width: 1440px)" widht="134" height="56" srcset="./img/cat-pro.svg">
-                    <source media="(min-width: 768px)" widht="268" height="112" srcset="./img/cat-pro.svg">
-                    <img src="./img/cat-pro.svg" alt="Изображение стройной кошки" width="67" height="30">
+                    <source media="(min-width: 1440px)" srcset="./img/cat-pro-1440px.webp 1x, ./img/cat-pro-1440px@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/cat-pro-768px.webp 1x, ./img/cat-pro-768px@2x.webp 2x">
+                    <img src="./img/cat-pro.webp" alt="Изображение стройной кошки"
+                    srcset="/img/cat-pro@2x.webp 2x">
                   </picture>
                 </div>
                 <h4 class="programms-desc-item__header-content">Набор массы</h4>
@@ -109,7 +109,6 @@
               <div class="programms-desc-item__footer">
                 <a href="./catalog.html" class="programms-desc-item__footer-content">
                   Каталог pro
-                  <span class="programms-desc-item__footer-arrow--right-long"></span>
                 </a>
               </div>
             </li>
@@ -121,7 +120,6 @@
           <li class="features__item features-item">
             <div class="features__pic-container">
               <picture class="features__img">
-                <source media="(min-width: 768px)" height="80" width="80">
                 <img src="./img/health-nutrition.svg"
                 alt="изображение только полезные вещества" height="60" width="60">
               </picture>
@@ -133,7 +131,6 @@
           <li class="features__item features-item">
             <div class="features__pic-container">
               <picture class="features__img">
-                <source media="(min-width: 768px)" height="80" width="80">
                 <img src="./img/easy-cooking.svg"
                 alt="изображение легко готовить" height="60" width="60">
               </picture>
@@ -145,7 +142,6 @@
           <li class="features__item features-item">
             <div class="features__pic-container">
               <picture class="features__img">
-                <source media="(min-width: 768px)" height="80" width="80">
                 <img src="./img/fork-and-knife.svg"
                 alt="изображение замените два приема пищи" height="60" width="60">
               </picture>
@@ -156,7 +152,6 @@
             <li class="features__item features-item">
               <div class="features__pic-container">
                 <picture class="features__img">
-                  <source media="(min-width: 768px)" height="80" width="80">
                   <img  src="./img/oclock.svg"
                   alt="изображение часы" height="60" width="60">
                 </picture>
@@ -193,13 +188,13 @@
           </div>
           <div class="example__toggle">
             <div class="example__cats-container">
-              <div class="example__img example--thin-cat"></div>
-              <div id="fatCat" class="example__img example--fat-cat"></div>
+              <div class="example__img example__thin-cat"></div>
+              <div class="example__img example__fat-cat"></div>
             </div>
             <div class="example__toggler-scrollbar">
-              <p id="catBefore" class="example__scrollbar example__scrollbar--desc">Было</p>
-              <input id="sliderInput" class="example__scrollbar example__scrollbar--input" type="range" min="1" max="100" value="50">
-              <p id="catAfter" class="example__scrollbar example__scrollbar--desc">Стало</p>
+              <p class="example__scrollbar example__scrollbar--desc example__scrollbar-before">Было</p>
+              <input class="example__scrollbar example__scrollbar--input" type="range" min="1" max="100" value="50">
+              <p id="catAfter" class="example__scrollbar example__scrollbar--desc example__scrollbar-after">Стало</p>
             </div>
           </div>
         </div>
@@ -216,39 +211,41 @@
           <address class="invetation-partners__address">
             ул. Большая
             <br>Конюшенная, д. 19/8
-            <span class="invetation-partners__address--city"><br>Санкт-Петербург</span>
+            <span class="invetation-partners__address-city"><br>Санкт-Петербург</span>
           </address>
         </div>
-        <div class="invetation-partners__map" id="map" aria-label="map"></div>
+        <div class="invetation-partners__map"></div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__text-logo">
-        <img src="./img/footer-text-logo.svg" alt="текст лого" width="128" height="24">
+        <a href="./index.html">
+          <img src="./img/footer-text-logo.svg" alt="текст лого" width="128" height="24">
+        </a>
       </div>
       <div class="outline outline--footer"></div>
       <ul class="page-footer__socials">
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Вконтакте">
-            <picture class="features__img">
-              <source media="(min-width: 768px)" height="17" width="29">
-              <img class="page-footer__social-vk" src="./img/vkontakte-icon.svg" alt="Вконтакте лого" height="12" width="22">
+          <a class="page-footer__link" href="https://vk.com/htmlacademy">
+            <picture>
+              <source media="(min-width: 768px)"  srcset="./img/vkontakte-icon-768px.svg">
+              <img class="page-footer__social-vk" src="./img/vkontakte-icon.svg" alt="Вконтакте лого">
             </picture>
           </a>
         </li>
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Инстаграм">
-            <picture class="features__img">
-              <source media="(min-width: 768px)" height="23" width="23">
-              <img class="page-footer__social-insta" src="./img/intagramm-icon.svg" alt="Инстаграм лого" height="16" width="16">
+          <a class="page-footer__link" href="https://www.instagram.com/htmlacademy/">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/instagramm-icon-768px.svg" >
+              <img class="page-footer__social-insta" src="./img/instagramm-icon.svg" alt="Инстаграм лого">
             </picture>
           </a>
         </li>
         <li>
-          <a class="page-footer__social-link" href="#" aria-label="Фэйсбук">
-            <picture class="features__img">
-              <source media="(min-width: 768px)" height="27" width="13">
-              <img class="page-footer__facebook" src="./img/facebook-icon.svg" alt="лого Фэйсбук" height="18" width="10">
+          <a class="page-footer__link" href="https://ru-ru.facebook.com/htmlacademy/">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/facebook-icon-768px.svg">
+              <img class="page-footer__facebook" src="./img/facebook-icon.svg" alt="лого Фэйсбук">
           </picture>
           </a>
         </li>
@@ -256,15 +253,16 @@
       <div class="outline outline--footer"></div>
       <div class="page-footer__academy-contet">
         <p>HTML Academy</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Курс адаптивной вёрстки сайтов">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive"
+          target="_blank" title="Курс адаптивной вёрстки сайтов">
           <img src="./img/htmlacademy.svg" alt="лого акадэми" width="27" height="34">
         </a>
       </div>
     </footer>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize"></script>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/slide-cats.js"></script>
+    <script src="js/addres-map.js"></script>
   </body>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNzk22YYzqhtw8S_rcrO4sn7Gbc70_j-M&callback=initialize">
-  </script>
-  <script src="js/menu-toggle.js"></script>
-  <script src="js/slide-cats.js"></script>
-  <script src="js/addres-map.js"></script>
 </html>
