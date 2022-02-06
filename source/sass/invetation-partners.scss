@@ -100,41 +100,41 @@
 
     background-image: url("../img/location.webp");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/location@2x.webp");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
     }
 
     @media (min-width: 768px) {
       background: url("../img/location-768px.webp");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
     }
 
     @media (min-width: 768px) and (min-resolution: 2dppx) {
       background: url("../img/location-768px@2x.webp");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
     }
 
     @media (min-width: 1440px) {
       background-image: url("../img/location-1440px.webp");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
     }
 
     @media (min-width: 1440px) and (min-resolution: 2dppx) {
       background-image: url("../img/location-1440px@2x.webp");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
       background-size: cover;
     }
   }
