@@ -29,7 +29,6 @@
     "start": "gulp",
     "build": "gulp build"
   },
-  "root": "./build",
   "browserslist": [
     "last 2 versions",
     "not dead",
